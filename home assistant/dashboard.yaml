@@ -40,10 +40,10 @@ views:
               - condition: or
                 conditions:
                   - condition: state
-                    entity: sensor.p1_meter_power
+                    entity: sensor.grid_power
                     state: unavailable
                   - condition: state
-                    entity: sensor.p1_meter_power
+                    entity: sensor.grid_power
                     state: unknown
           - type: markdown
             content: >+
@@ -57,10 +57,10 @@ views:
                   - condition: or
                     conditions:
                       - condition: state
-                        entity: sensor.p1_meter_power
+                        entity: sensor.gridr_power
                         state: unavailable
                       - condition: state
-                        entity: sensor.p1_meter_power
+                        entity: sensor.grid_power
                         state: unknown
           - type: heading
             icon: mdi:pen
@@ -178,7 +178,7 @@ views:
             entities:
               - entity: input_number.house_battery_control_pid_output
                 name: PID control
-              - entity: sensor.p1_meter_power
+              - entity: sensor.grid_power
                 name: Grid power
               - entity: select.marstek_m1_forcible_charge_discharge
                 name: M1
@@ -297,7 +297,7 @@ views:
             entities:
               - entity: sensor.marstek_m1_battery_state_of_charge
                 name: M1 SoC
-              - entity: sensor.marstek_m1_battery_power
+              - entity: sensor.marstek_m1_ac_power
                 name: M1 Power
               - entity: number.marstek_m1_max_charge_power
                 name: Max Charge
@@ -324,7 +324,7 @@ views:
             entities:
               - entity: sensor.marstek_m2_battery_state_of_charge
                 name: M2 SoC
-              - entity: sensor.marstek_m2_battery_power
+              - entity: sensor.marstek_m2_ac_power
                 name: M2 Power
               - entity: number.marstek_m2_max_charge_power
                 name: Max Charge
@@ -356,7 +356,7 @@ views:
             entities:
               - entity: sensor.marstek_m3_battery_state_of_charge
                 name: M3 SoC
-              - entity: sensor.marstek_m3_battery_power
+              - entity: sensor.marstek_m3_ac_power
                 name: M3 Power
               - entity: number.marstek_m3_max_charge_power
                 name: Max Charge
@@ -388,7 +388,7 @@ views:
             entities:
               - entity: sensor.marstek_m4_battery_state_of_charge
                 name: M4 SoC
-              - entity: sensor.marstek_m4_battery_power
+              - entity: sensor.marstek_m4_ac_power
                 name: M4 Power
               - entity: number.marstek_m4_max_charge_power
                 name: Max Charge
@@ -763,7 +763,7 @@ views:
             entities:
               - entity: input_number.house_battery_control_pid_output
                 name: PID sum
-              - entity: sensor.p1_meter_power
+              - entity: sensor.grid_power
                 name: Grid power
               - entity: input_number.house_battery_control_error_signal
                 name: Error

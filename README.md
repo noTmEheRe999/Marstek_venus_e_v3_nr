@@ -1,3 +1,5 @@
+THis branch is for personal use. Files here are adjusted for my situation and used names. Please visit https://github.com/gitcodebob/marstek-venus-rs485-node-red for actual code and maintanance.
+
 # Home Battery Control with Home Assistant & Node-RED
 
 This project is designed for hobbyists who want to control home battery systems using Home Assistant and Node-RED. It provides ready-to-use flows and configuration examples, including a PID controller for advanced battery management. Use at your own discretion.
